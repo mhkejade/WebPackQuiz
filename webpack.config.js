@@ -7,12 +7,12 @@ module.exports = function (env) {
         vendors: ['./src/js/vendors/vendor1.js', './src/js/vendors/vendor2.js'] 
     },
     output: {
-      path: path.resolve(__dirname, 'public'),
+      path: path.resolve(__dirname, 'destination'),
       filename: '[name].[contentHash].bundle.js',
       publicPath: '/',
     },
     devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
+      contentBase: path.resolve(__dirname, 'destination'),
       publicPath: '/',
     },
     module: {
